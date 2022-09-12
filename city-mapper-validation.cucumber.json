@@ -23,7 +23,7 @@
             "name": "I send GET request to 'api/1/directions/'",
             "result": {
               "status": "passed",
-              "duration": 287000000
+              "duration": 215000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I get response code '404'",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 8000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I send GET request to 'api/1/directions/Invalid'",
             "result": {
               "status": "passed",
-              "duration": 178000000
+              "duration": 113000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I get response message 'no Route matched with those values'",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           }
         ]

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-control" content="public">
-    <title>api.external.citymapper.com | Automation Report</title>
+    <title>en.wikipedia.org | Automation Report</title>
 
     
             <!-- Bootstrap -->
@@ -611,7 +611,7 @@ input#darkCheck:checked ~ label>svg#moon {
             </div>
             <p class="navbar-text" style="float: left">Features Overview
             </p>
-            <p class="navbar-text">Automation Report for api.external.citymapper.com Environment</p>
+            <p class="navbar-text">Automation Report for en.wikipedia.org Environment</p>
         </div>
 
     </nav>
@@ -626,19 +626,19 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>TFL Journey - Health Check</small>
+                <small>MediaWiki - Health Check</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>     As a travelor
-    I want to be able to plan a journey via API
+                    <strong>Description: </strong>     As a user
+    I want to be able to edit a wiki page
     So that I can confirm the API is working correctly </p>
                 
                <p><strong>File name:</strong>
-                    tfl-journey.feature
+                    media-wiki-edit-page.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    tfl-journey.feature</p>
+                    media-wiki-edit-page.feature</p>
             
         </div>
 
@@ -676,7 +676,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">1</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -708,7 +708,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:05.460</td></tr>
+                <tr><td>00:00:02.679</td></tr>
             </tr>
         
     </table>
@@ -832,7 +832,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the user can plan a journey for a public bus from Point A to Point B - within London</small></h2>
+                <h2>Scenario: <small>Verify that the user can edit a page</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -858,7 +858,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:01.724</span>
+                            <span style=padding-right:5em>00:00:02.679</span>
                         </li>
                     
                 </ul>
@@ -884,13 +884,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        A journey from 'N97JA' to 'W1B3AG' via 'tube,bus,overground'
+                                        I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:01.628</span>
+                                            <span class="duration">00:00:00.344</span>
                                         
                                     
 
@@ -948,257 +948,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        I get response code '200'
+                                        the user login as a test user with username 'KaluzaTest@kaluza' and password 'cteivp02ftopvos8h9n1vpn353g6o29q'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.042</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.054</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Verify that the user can plan a journey for a public bus from Point A to Point B - A inside London & B outside London</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-                        <li>
-                            <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:03.736</span>
-                        </li>
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        A journey from 'N97JA' to 'SS11EE' via 'tube,bus,overground'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:03.575</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        I get response code '200'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.081</span>
+                                            <span class="duration">00:00:01.818</span>
                                         
                                     
 
@@ -1256,13 +1012,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'
+                                        the user edits a wiki page 'test edit'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.080</span>
+                                            <span class="duration">00:00:00.517</span>
                                         
                                     
 
@@ -1355,7 +1111,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            2,
+                            1,
                             0,
                             0,
                             0,

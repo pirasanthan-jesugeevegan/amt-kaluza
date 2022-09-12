@@ -1,0 +1,53 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to edit a wiki page\n    So that I can confirm the API is working correctly",
+    "keyword": "Feature",
+    "name": "MediaWiki - Health Check",
+    "line": 1,
+    "id": "mediawiki---health-check",
+    "tags": [],
+    "uri": "media-wiki-edit-page.feature",
+    "elements": [
+      {
+        "id": "mediawiki---health-check;verify-that-the-user-can-edit-a-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify that the user can edit a page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user login as a test user with username 'KaluzaTest@kaluza' and password 'cteivp02ftopvos8h9n1vpn353g6o29q'",
+            "result": {
+              "status": "passed",
+              "duration": 1818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user edits a wiki page 'test edit'",
+            "result": {
+              "status": "passed",
+              "duration": 517000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

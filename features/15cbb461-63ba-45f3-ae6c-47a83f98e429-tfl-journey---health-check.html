@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-control" content="public">
-    <title>api.external.citymapper.com | Automation Report</title>
+    <title>en.wikipedia.org | Automation Report</title>
 
     
             <!-- Bootstrap -->
@@ -611,7 +611,7 @@ input#darkCheck:checked ~ label>svg#moon {
             </div>
             <p class="navbar-text" style="float: left">Features Overview
             </p>
-            <p class="navbar-text">Automation Report for api.external.citymapper.com Environment</p>
+            <p class="navbar-text">Automation Report for en.wikipedia.org Environment</p>
         </div>
 
     </nav>
@@ -626,7 +626,7 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>CityMapper Journey Planner - Validation</small>
+                <small>TFL Journey - Health Check</small>
             </h1>
             
                 <p>
@@ -635,10 +635,10 @@ input#darkCheck:checked ~ label>svg#moon {
     So that I can confirm the API is working correctly </p>
                 
                <p><strong>File name:</strong>
-                    city-mapper-validation.feature
+                    tfl-journey.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    city-mapper-validation.feature</p>
+                    tfl-journey.feature</p>
             
         </div>
 
@@ -708,7 +708,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:00.370</td></tr>
+                <tr><td>00:00:05.815</td></tr>
             </tr>
         
     </table>
@@ -832,7 +832,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the direction endpoint has the right validation - empty params</small></h2>
+                <h2>Scenario: <small>Verify that the user can plan a journey for a public bus from Point A to Point B - within London</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -858,7 +858,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.222</span>
+                            <span style=padding-right:5em>00:00:01.527</span>
                         </li>
                     
                 </ul>
@@ -884,13 +884,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I send GET request to 'api/1/directions/'
+                                        A journey from 'N97JA' to 'W1B3AG' via 'tube,bus,overground'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.198</span>
+                                            <span class="duration">00:00:01.410</span>
                                         
                                     
 
@@ -948,13 +948,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        I get response code '404'
+                                        I get response code '200'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.016</span>
+                                            <span class="duration">00:00:00.057</span>
                                         
                                     
 
@@ -1012,13 +1012,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I get response message 'no Route matched with those values'
+                                        I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.008</span>
+                                            <span class="duration">00:00:00.060</span>
                                         
                                     
 
@@ -1076,7 +1076,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the direction endpoint has the right validation - invlaid params</small></h2>
+                <h2>Scenario: <small>Verify that the user can plan a journey for a public bus from Point A to Point B - A inside London & B outside London</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1102,7 +1102,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.148</span>
+                            <span style=padding-right:5em>00:00:04.288</span>
                         </li>
                     
                 </ul>
@@ -1128,13 +1128,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I send GET request to 'api/1/directions/Invalid'
+                                        A journey from 'N97JA' to 'SS11EE' via 'tube,bus,overground'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.136</span>
+                                            <span class="duration">00:00:04.116</span>
                                         
                                     
 
@@ -1192,13 +1192,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        I get response code '404'
+                                        I get response code '200'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.007</span>
+                                            <span class="duration">00:00:00.117</span>
                                         
                                     
 
@@ -1256,13 +1256,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I get response message 'no Route matched with those values'
+                                        I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.005</span>
+                                            <span class="duration">00:00:00.055</span>
                                         
                                     
 

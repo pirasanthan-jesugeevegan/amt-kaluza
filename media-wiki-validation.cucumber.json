@@ -1,0 +1,94 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to validate the API endpoints\n    So that I can confirm the API is working correctly",
+    "keyword": "Feature",
+    "name": "MediaWiki - Validation",
+    "line": 1,
+    "id": "mediawiki---validation",
+    "tags": [],
+    "uri": "media-wiki-validation.feature",
+    "elements": [
+      {
+        "id": "mediawiki---validation;verify-that-the-login-api-cannot-be-logged-in-with-invalid-data---<scenario>",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify that the login API cannot be logged in with invalid data - <scenario>",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user login as a test user with username '' and password 'cteivp02ftopvos8h9n1vpn353g6o29q'",
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get failed login response 'Incorrect username or password entered. Please try again.'",
+            "result": {
+              "status": "failed",
+              "duration": 259000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'The supplied credentials could not be authenticated.'\n    +'Incorrect username or password entered. Please try again.'\n\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/scripts/media-wiki/media-wiki-validation.feature:100:12)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mediawiki---validation;verify-that-the-login-api-cannot-be-logged-in-with-invalid-data---<scenario>",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify that the login API cannot be logged in with invalid data - <scenario>",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
+            "result": {
+              "status": "passed",
+              "duration": 234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user login as a test user with username 'Invalid' and password 'cteivp02ftopvos8h9n1vpn353g6o29q'",
+            "result": {
+              "status": "passed",
+              "duration": 327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get failed login response 'Incorrect username or password entered. Please try again.'",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -23,7 +23,7 @@
             "name": "A journey from 'N97JA' to 'W1B3AG' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 1628000000
+              "duration": 1410000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 57000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 60000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "A journey from 'N97JA' to 'SS11EE' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 3575000000
+              "duration": 4116000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 117000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 55000000
             }
           }
         ]

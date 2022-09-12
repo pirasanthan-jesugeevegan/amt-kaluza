@@ -2,17 +2,17 @@
   {
     "description": "    As a travelor\n    I want to be able to plan a journey via API\n    So that I can confirm the API is working correctly",
     "keyword": "Feature",
-    "name": "CityMapper Journey Planner - Validation",
+    "name": "TFL Journey - Health Check",
     "line": 1,
-    "id": "citymapper-journey-planner---validation",
+    "id": "tfl-journey---health-check",
     "tags": [],
-    "uri": "city-mapper-validation.feature",
+    "uri": "tfl-journey.feature",
     "elements": [
       {
-        "id": "citymapper-journey-planner---validation;verify-that-the-direction-endpoint-has-the-right-validation---empty-params",
+        "id": "tfl-journey---health-check;verify-that-the-user-can-plan-a-journey-for-a-public-bus-from-point-a-to-point-b---within-london",
         "keyword": "Scenario",
         "line": 13,
-        "name": "Verify that the direction endpoint has the right validation - empty params",
+        "name": "Verify that the user can plan a journey for a public bus from Point A to Point B - within London",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,39 +20,39 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "I send GET request to 'api/1/directions/'",
+            "name": "A journey from 'N97JA' to 'W1B3AG' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 198000000
+              "duration": 1628000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "I get response code '404'",
+            "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 42000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I get response message 'no Route matched with those values'",
+            "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 54000000
             }
           }
         ]
       },
       {
-        "id": "citymapper-journey-planner---validation;verify-that-the-direction-endpoint-has-the-right-validation---invlaid-params",
+        "id": "tfl-journey---health-check;verify-that-the-user-can-plan-a-journey-for-a-public-bus-from-point-a-to-point-b---a-inside-london-&-b-outside-london",
         "keyword": "Scenario",
         "line": 14,
-        "name": "Verify that the direction endpoint has the right validation - invlaid params",
+        "name": "Verify that the user can plan a journey for a public bus from Point A to Point B - A inside London & B outside London",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -60,30 +60,30 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "I send GET request to 'api/1/directions/Invalid'",
+            "name": "A journey from 'N97JA' to 'SS11EE' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 3575000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "I get response code '404'",
+            "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 81000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I get response message 'no Route matched with those values'",
+            "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 80000000
             }
           }
         ]

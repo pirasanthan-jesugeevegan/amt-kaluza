@@ -8,7 +8,7 @@ Cypress.Commands.add('getDirection', (url, params) => {
       'Citymapper-Partner-Key': Cypress.env('API_KEY'),
     },
     failOnStatusCode: false,
-  });
+  }).then((response) => cy.writeFile('cypress/fixtures/data.json', response));
 });
 
 Cypress.Commands.add('getLocation', (postcode) => {

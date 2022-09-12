@@ -4,3 +4,4 @@ yarn-error.log
 reports
 cypress/videos
 cypress/.run
+cypress/fixtures/data.json

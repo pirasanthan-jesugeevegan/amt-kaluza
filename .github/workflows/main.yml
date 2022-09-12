@@ -1,0 +1,33 @@
+name: Generate Cypress Report
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - 'master'
+jobs:
+  cypress-api-test:
+    name: API test
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node14.19.0-chrome100-ff99-edge
+    env:
+      API_KEY: ${{ secrets.API_KEY }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install cypress and verify
+        run: |
+          npm ci
+          $(npm bin)/cypress verify
+          
+      - name: Run Cypress tests 
+        run: CYPRESS_baseUrl=${{github.event.inputs.url}} npx cypress-tags run --headless --browser ${{github.event.inputs.browser || 'chrome'}} --env configFile=${{github.event.inputs.environment || 'festicket-alpha'}} TAGS='${{github.event.inputs.tags || '@festicket-reg'}}'
+
+
+      - name: Generate HTML report
+        run: node cucumber-html-report.js
+
+      - name: Deploy report page to GitHub Page
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./cypress/reports

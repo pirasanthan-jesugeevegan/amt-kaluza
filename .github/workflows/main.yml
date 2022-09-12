@@ -20,8 +20,7 @@ jobs:
           $(npm bin)/cypress verify
           
       - name: Run Cypress tests 
-        run: CYPRESS_baseUrl=${{github.event.inputs.url}} npx cypress-tags run --headless --browser ${{github.event.inputs.browser || 'chrome'}} --env configFile=${{github.event.inputs.environment || 'festicket-alpha'}} TAGS='${{github.event.inputs.tags || '@festicket-reg'}}'
-
+        run: npx cypress run 
 
       - name: Generate HTML report
         run: node cucumber-html-report.js

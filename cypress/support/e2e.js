@@ -17,5 +17,6 @@
 import './commands';
 import './api/citymapper';
 import './api/tfl';
+import './api/media-wiki';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

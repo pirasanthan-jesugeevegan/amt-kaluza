@@ -10,7 +10,7 @@ module.exports = defineConfig({
     API_KEY: process.env.API_KEY,
   },
   e2e: {
-    baseUrl: 'https://api.external.citymapper.com',
+    baseUrl: 'https://en.wikipedia.org/w/api.php',
     specPattern: '**/*.feature',
     setupNodeEvents(on, config) {
       // implement node event listeners here

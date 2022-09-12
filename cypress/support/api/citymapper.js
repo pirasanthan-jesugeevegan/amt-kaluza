@@ -3,7 +3,7 @@ Cypress.Commands.add('getDirection', (url, params) => {
   console.log(Cypress.env('API_KEY'));
   cy.request({
     method: 'GET',
-    url: `${url}?${params}`,
+    url: `https://api.external.citymapper.com/${url}?${params}`,
     headers: {
       'Citymapper-Partner-Key': Cypress.env('API_KEY'),
     },

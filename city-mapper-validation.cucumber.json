@@ -1,0 +1,93 @@
+[
+  {
+    "description": "    As a travelor\n    I want to be able to plan a journey via API\n    So that I can confirm the API is working correctly",
+    "keyword": "Feature",
+    "name": "CityMapper Journey Planner - Validation",
+    "line": 1,
+    "id": "citymapper-journey-planner---validation",
+    "tags": [],
+    "uri": "city-mapper-validation.feature",
+    "elements": [
+      {
+        "id": "citymapper-journey-planner---validation;verify-that-the-direction-endpoint-has-the-right-validation---empty-params",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify that the direction endpoint has the right validation - empty params",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I send GET request to 'api/1/directions/'",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I get response code '404'",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response message 'no Route matched with those values'",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "citymapper-journey-planner---validation;verify-that-the-direction-endpoint-has-the-right-validation---invlaid-params",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify that the direction endpoint has the right validation - invlaid params",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I send GET request to 'api/1/directions/Invalid'",
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I get response code '404'",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response message 'no Route matched with those values'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

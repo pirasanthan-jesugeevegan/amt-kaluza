@@ -5,9 +5,16 @@
   "dependencies": {
     "cypress-cucumber-preprocessor": "^4.3.1",
     "dotenv": "^16.0.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }

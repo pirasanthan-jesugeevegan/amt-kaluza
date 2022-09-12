@@ -7,8 +7,16 @@
 
 This is a task to Automate API using Cypress, Cucumber and Mochawesome report, Please see below for the Test Case that are automated 
 
+### Why I choose Cypress? 
+I choose Cypress over other tools because I have many years of experience with this tool and I feel comfortable.
+Cypress also provides integration with Cucumber for writing the test scenarios in BDD format. 
+
+
+## Task 1
 Due to TLF api registration form having issues, I took the decision to looking for an alternative API. 
 I found CityMapper API
+
+I also used https://postcodes.io/ API to generate lat & long for a location(postcode)
 
 
 ## Install
@@ -39,6 +47,7 @@ node cucumber-html-report.js
  - Cypress 
  - Cucumber
  - Mocha
+ - Gitub Action
  - multiple-cucumber-html-reporter
 
 ## DEMO

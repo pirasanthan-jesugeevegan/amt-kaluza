@@ -7,8 +7,7 @@ Cypress.Commands.add('getDirection', (url, params) => {
     headers: {
       'Citymapper-Partner-Key': Cypress.env('API_KEY'),
     },
-  }).then((response) => {
-    expect(response.status).to.eq(200);
+    failOnStatusCode: false,
   });
 });
 
@@ -17,9 +16,14 @@ Cypress.Commands.add('getLocation', (postcode) => {
   cy.request({
     method: 'GET',
     url: `https://api.postcodes.io/postcodes/${postcode}`,
+    failOnStatusCode: false,
   }).then((response) => {
     expect(response.status).to.eq(200);
-    const latLng = `${response.body.result.latitude},${response.body.result.longitude}`;
-    return latLng;
+    if (response.status === 200) {
+      const latLng = `${response.body.result.latitude},${response.body.result.longitude}`;
+      return latLng;
+    } else {
+      return response;
+    }
   });
 });

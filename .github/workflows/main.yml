@@ -21,11 +21,14 @@ jobs:
 
       - name: Run Cypress tests
         run: npm run run:regression
+        continue-on-error: false
 
       - name: Generate HTML report
+        if: always()
         run: node cucumber-html-report.js
 
       - name: Deploy report page to GitHub Page
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

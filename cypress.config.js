@@ -7,7 +7,9 @@ dotenv.config();
 
 module.exports = defineConfig({
   env: {
-    API_KEY: process.env.API_KEY,
+    CITY_MAPPER_API_KEY: process.env.CITY_MAPPER_API_KEY,
+    MEDIA_WIKI_USERNAME: process.env.MEDIA_WIKI_USERNAME,
+    MEDIA_WIKI_PASSWORD: process.env.MEDIA_WIKI_PASSWORD,
   },
   e2e: {
     baseUrl: 'https://en.wikipedia.org/w/api.php',

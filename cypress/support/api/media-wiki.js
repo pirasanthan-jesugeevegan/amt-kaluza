@@ -17,8 +17,8 @@ Cypress.Commands.add('loginRequest', (username, password) => {
 
   const params_1 = {
     action: 'login',
-    lgname: username,
-    lgpassword: password,
+    lgname: Cypress.env('MEDIA_WIKI_USERNAME') || username,
+    lgpassword: Cypress.env('MEDIA_WIKI_PASSWORD') || password,
     lgtoken: logintoken,
     format: 'json',
   };

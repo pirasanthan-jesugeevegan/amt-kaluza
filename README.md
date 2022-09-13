@@ -12,12 +12,13 @@ I choose Cypress over other tools because I have many years of experience with t
 Cypress also provides integration with Cucumber for writing the test scenarios in BDD format. 
 
 
-## Task 1
 Due to TLF api registration form having issues, I took the decision to looking for an alternative API. 
 I found CityMapper API
 
 I also used https://postcodes.io/ API to generate lat & long for a location(postcode)
 
+
+I have left one test case failing to demonstrate the debuging of the report 
 ## Prerequisite
 
 ### city mapper

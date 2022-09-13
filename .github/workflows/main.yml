@@ -18,9 +18,9 @@ jobs:
         run: |
           npm ci
           $(npm bin)/cypress verify
-          
-      - name: Run Cypress tests 
-        run: npx cypress run 
+
+      - name: Run Cypress tests
+        run: npm run run:regression
 
       - name: Generate HTML report
         run: node cucumber-html-report.js

@@ -1,4 +1,24 @@
 {
+  "name": "amt-kaluza",
+  "version": "1.0.0",
+  "description": "Task for Kaluza",
+  "main": "index.js",
+  "scripts": {
+    "run:regression": "cypress-tags run --headless --browser chrome --env TAGS='@regression'",
+    "run:smoke": "cypress-tags run --headless --browser chrome --env TAGS='@smoke'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirasanthan-jesugeevegan/amt-kaluza.git"
+  },
+  "keywords": [
+    "cucumber",
+    "gherkin",
+    "cypress",
+    "api-testing"
+  ],
+  "author": "Pirasanthan Jesugeevegan",
+  "license": "ISC",
   "devDependencies": {
     "cypress": "^10.7.0"
   },

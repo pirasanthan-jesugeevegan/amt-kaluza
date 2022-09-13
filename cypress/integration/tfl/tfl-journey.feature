@@ -4,6 +4,7 @@ Feature: TFL Journey - Health Check
     I want to be able to plan a journey via API
     So that I can confirm the API is working correctly
 
+    @regression @smoke
     Scenario Outline: Verify that the user can plan a journey for a public bus from Point A to Point B - <journey>
         Given A journey from '<from>' to '<to>' via 'tube,bus,overground'
         When I get response code '<code>'

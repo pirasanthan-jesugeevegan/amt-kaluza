@@ -4,6 +4,7 @@ Feature: MediaWiki - Validation
     I want to be able to validate the API endpoints
     So that I can confirm the API is working correctly
 
+    @regression
     Scenario Outline: Verify that the login API cannot be logged in with invalid data - <scenario>
         Given I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token
         When the user login as a test user with username '<username>' and password 'cteivp02ftopvos8h9n1vpn353g6o29q'

@@ -4,6 +4,7 @@ Feature: CityMapper Journey Planner - Validation
     I want to be able to plan a journey via API
     So that I can confirm the API is working correctly
 
+    @regression
     Scenario Outline: Verify that the direction endpoint has the right validation - <validation>
         Given I send GET request to '<url>'
         When I get response code '<code>'

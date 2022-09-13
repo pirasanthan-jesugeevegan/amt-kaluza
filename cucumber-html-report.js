@@ -2,21 +2,21 @@ const report = require('multiple-cucumber-html-reporter');
 const fs = require('fs-extra');
 const path = require('path');
 
-const cucumberJsonDir = path.resolve(process.cwd(), 'cypress/reports');
-const ReportDir = path.resolve(process.cwd(), 'cypress/reports');
+const ReportDir = path.resolve(process.cwd(), 'cypress/reports'); // Path for report directory
 
-if (!fs.existsSync(cucumberJsonDir)) {
+if (!fs.existsSync(ReportDir)) {
   console.warn('REPORT CANNOT BE CREATED!');
 } else {
   fs.readFile('cypress/.run/results.json', function read(err, data) {
-    let runInfos = JSON.parse(data);
+    let runInfos = JSON.parse(data); // run information
     let domain = new URL(runInfos.config.baseUrl);
     domain = domain.hostname.replace('www.', '');
 
+    // construct the report using data from post build data
     report.generate({
       pageTitle: `${domain} | Automation Report`,
       reportName: `Automation Report for ${domain} Environment`,
-      jsonDir: cucumberJsonDir,
+      jsonDir: ReportDir,
       reportPath: ReportDir,
       displayReportTime: true,
       displayDuration: true,

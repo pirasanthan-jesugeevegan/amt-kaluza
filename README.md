@@ -18,6 +18,15 @@ I found CityMapper API
 
 I also used https://postcodes.io/ API to generate lat & long for a location(postcode)
 
+## Prerequisite
+
+### city mapper
+1. Go to https://enterprise.citymapper.com/ and create a free account to access API Key
+2. Then create a `.env` and add the key by following `.evn.example` template
+
+### mediawiki
+1. Go to https://www.mediawiki.org/wiki/Manual:Bot_passwords and create a free account to be able to create a bot
+2. Then edit `.env` and add the `username` & `password` by following `.evn.example` template
 
 ## Install
 
@@ -27,10 +36,16 @@ I also used https://postcodes.io/ API to generate lat & long for a location(post
 
 ## Run tests
 **CLI** - Run CLI
-
+### Run regression 
  
 ```
-npx cypress run
+npm run run:regression
+```
+
+### Run smoke pack 
+ 
+```
+npm run run:smoke
 ```
 **Cypress UI** - Run on Cypress UI
  

@@ -32,7 +32,7 @@
             "name": "A journey from 'N97JA' to 'W1B3AG' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 1523000000
+              "duration": 1417000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 77000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 63000000
             }
           }
         ]
@@ -81,7 +81,7 @@
             "name": "A journey from 'N97JA' to 'SS11EE' via 'tube,bus,overground'",
             "result": {
               "status": "passed",
-              "duration": 3646000000
+              "duration": 2609000000
             }
           },
           {
@@ -90,8 +90,8 @@
             "line": 10,
             "name": "I get response code '200'",
             "result": {
-              "status": "passed",
-              "duration": 201000000
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +'200'\n\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/tfl/tfl-journey.feature:85:12)"
             }
           },
           {
@@ -100,8 +100,7 @@
             "line": 11,
             "name": "I get response body field of '$type,journeyVector,journeys,lines,recommendedMaxAgeMinutes,searchCriteria,stopMessages'",
             "result": {
-              "status": "passed",
-              "duration": 130000000
+              "status": "skipped"
             }
           }
         ]

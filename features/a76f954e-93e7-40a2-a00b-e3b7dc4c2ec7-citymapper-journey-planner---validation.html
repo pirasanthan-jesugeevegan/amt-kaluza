@@ -631,19 +631,19 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>MediaWiki - Validation</small>
+                <small>CityMapper Journey Planner - Validation</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>     As a user
-    I want to be able to validate the API endpoints
+                    <strong>Description: </strong>     As a travelor
+    I want to be able to plan a journey via API
     So that I can confirm the API is working correctly </p>
                 
                <p><strong>File name:</strong>
-                    media-wiki-validation.feature
+                    city-mapper-validation.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    media-wiki-validation.feature</p>
+                    city-mapper-validation.feature</p>
             
         </div>
 
@@ -692,7 +692,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -701,7 +701,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     
                     
                     </tr>
@@ -713,7 +713,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:02.153</td></tr>
+                <tr><td>00:00:00.313</td></tr>
             </tr>
         
     </table>
@@ -842,7 +842,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the login API cannot be logged in with invalid data - <scenario></small></h2>
+                <h2>Scenario: <small>Verify that the direction endpoint has the right validation - empty params</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -856,14 +856,10 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-                        <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -872,7 +868,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:01.254</span>
+                            <span style=padding-right:5em>00:00:00.191</span>
                         </li>
                     
                 </ul>
@@ -898,13 +894,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token
+                                        I send GET request to 'api/1/directions/'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.276</span>
+                                            <span class="duration">00:00:00.171</span>
                                         
                                     
 
@@ -962,13 +958,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user login as a test user with username '' and password 'MEDIA_WIKI_PASSWORD'
+                                        I get response code '404'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.717</span>
+                                            <span class="duration">00:00:00.013</span>
                                         
                                     
 
@@ -1016,8 +1012,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1026,13 +1022,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I get failed login response 'Incorrect username or password entered. Please try again.'
+                                        I get response message 'no Route matched with those values'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.261</span>
+                                            <span class="duration">00:00:00.007</span>
                                         
                                     
 
@@ -1041,8 +1037,6 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
                                     
 
-                                    
-                                        <a href="#error0-2-error" data-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1058,11 +1052,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-                                <div id="error0-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'
-    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)</pre>
-                                </div>
                             
 
                             
@@ -1102,7 +1091,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the login API cannot be logged in with invalid data - <scenario></small></h2>
+                <h2>Scenario: <small>Verify that the direction endpoint has the right validation - invlaid params</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1116,14 +1105,10 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-                        <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -1132,7 +1117,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.899</span>
+                            <span style=padding-right:5em>00:00:00.122</span>
                         </li>
                     
                 </ul>
@@ -1158,13 +1143,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token
+                                        I send GET request to 'api/1/directions/Invalid'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.300</span>
+                                            <span class="duration">00:00:00.105</span>
                                         
                                     
 
@@ -1222,13 +1207,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user login as a test user with username 'Invalid' and password 'MEDIA_WIKI_PASSWORD'
+                                        I get response code '404'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.599</span>
+                                            <span class="duration">00:00:00.007</span>
                                         
                                     
 
@@ -1276,8 +1261,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1286,13 +1271,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I get failed login response 'Incorrect username or password entered. Please try again.'
+                                        I get response message 'no Route matched with those values'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.010</span>
                                         
                                     
 
@@ -1301,8 +1286,6 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
                                     
 
-                                    
-                                        <a href="#error1-2-error" data-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1318,11 +1301,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-                                <div id="error1-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'
-    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)</pre>
-                                </div>
                             
 
                             
@@ -1392,8 +1370,8 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            0,
                             2,
+                            0,
                             0,
                             0,
                             0,

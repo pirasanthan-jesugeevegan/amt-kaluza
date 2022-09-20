@@ -28,7 +28,7 @@
             "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 165000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user login as a test user with username '' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 692000000
+              "duration": 631000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "I get failed login response 'Incorrect username or password entered. Please try again.'",
             "result": {
               "status": "failed",
-              "duration": 206000000,
+              "duration": 201000000,
               "error_message": "AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)"
             }
           }
@@ -74,7 +74,7 @@
             "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
             "result": {
               "status": "passed",
-              "duration": 211000000
+              "duration": 200000000
             }
           },
           {
@@ -84,7 +84,7 @@
             "name": "the user login as a test user with username 'Invalid' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 630000000
+              "duration": 589000000
             }
           },
           {

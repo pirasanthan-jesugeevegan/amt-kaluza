@@ -32,7 +32,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 624000000
+              "duration": 644000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I send GET request to 'api/1/directions/transit'",
             "result": {
               "status": "passed",
-              "duration": 1315000000
+              "duration": 2813000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 104000000
             }
           }
         ]
@@ -81,7 +81,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 280000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "I send GET request to 'api/1/directions/transit'",
             "result": {
               "status": "passed",
-              "duration": 1934000000
+              "duration": 864000000
             }
           },
           {
@@ -101,7 +101,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 43000000
             }
           }
         ]
@@ -130,7 +130,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 93000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "I send GET request to 'api/1/directions/carride'",
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 195000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 67000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "I send GET request to 'api/1/directions/carride'",
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 186000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 8000000
             }
           }
         ]
@@ -228,7 +228,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 87000000
             }
           },
           {
@@ -238,7 +238,7 @@
             "name": "I send GET request to 'api/1/directions/motorscooterride'",
             "result": {
               "status": "passed",
-              "duration": 302000000
+              "duration": 357000000
             }
           },
           {
@@ -248,7 +248,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 20000000
             }
           }
         ]
@@ -277,7 +277,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 79000000
             }
           },
           {
@@ -287,7 +287,7 @@
             "name": "I send GET request to 'api/1/directions/motorscooterride'",
             "result": {
               "status": "passed",
-              "duration": 538000000
+              "duration": 393000000
             }
           },
           {
@@ -297,7 +297,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 26000000
             }
           }
         ]

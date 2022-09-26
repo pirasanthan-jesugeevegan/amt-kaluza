@@ -32,7 +32,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 702000000
+              "duration": 435000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I send GET request to 'api/1/directions/transit'",
             "result": {
               "status": "passed",
-              "duration": 1341000000
+              "duration": 1317000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 69000000
             }
           }
         ]
@@ -81,7 +81,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 316000000
+              "duration": 219000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "I send GET request to 'api/1/directions/transit'",
             "result": {
               "status": "passed",
-              "duration": 1188000000
+              "duration": 693000000
             }
           },
           {
@@ -100,8 +100,8 @@
             "line": 11,
             "name": "I get response code '200'",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +'200'\n\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/city-mapper/city-mapper-journey-planner.feature:85:12)"
+              "status": "passed",
+              "duration": 22000000
             }
           }
         ]
@@ -130,7 +130,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 107000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "I send GET request to 'api/1/directions/carride'",
             "result": {
               "status": "passed",
-              "duration": 147000000
+              "duration": 112000000
             }
           },
           {
@@ -150,7 +150,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           }
         ]
@@ -179,7 +179,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 81000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "I send GET request to 'api/1/directions/carride'",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 111000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 12000000
             }
           }
         ]
@@ -228,7 +228,7 @@
             "name": "A destination from 'N97JA' to 'W1B3AG'",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 86000000
             }
           },
           {
@@ -238,7 +238,7 @@
             "name": "I send GET request to 'api/1/directions/motorscooterride'",
             "result": {
               "status": "passed",
-              "duration": 638000000
+              "duration": 335000000
             }
           },
           {
@@ -248,7 +248,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 11000000
             }
           }
         ]
@@ -277,7 +277,7 @@
             "name": "A destination from 'N97JA' to 'SS11EE'",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 141000000
             }
           },
           {
@@ -287,7 +287,7 @@
             "name": "I send GET request to 'api/1/directions/motorscooterride'",
             "result": {
               "status": "passed",
-              "duration": 2238000000
+              "duration": 1446000000
             }
           },
           {
@@ -297,7 +297,7 @@
             "name": "I get response code '200'",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 45000000
             }
           }
         ]

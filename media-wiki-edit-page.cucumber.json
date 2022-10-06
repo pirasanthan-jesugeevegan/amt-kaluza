@@ -32,7 +32,7 @@
             "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
             "result": {
               "status": "passed",
-              "duration": 292000000
+              "duration": 270000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "the user login as a test user with username 'MEDIA_WIKI_USERNAME' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 835000000
+              "duration": 606000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "the user edits a wiki page 'test edit'",
             "result": {
               "status": "passed",
-              "duration": 162000000
+              "duration": 168000000
             }
           }
         ]

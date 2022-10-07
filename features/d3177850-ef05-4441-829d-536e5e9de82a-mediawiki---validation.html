@@ -623,29 +623,27 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
-                        <i class="fa fa-tags fa-lg"></i>
+                        <i class="fa fa-tag fa-lg"></i>
                         
                             <span class="tag">@regression</span>
-                        
-                            <span class="tag">@smoke</span>
                         
                     
                 
             </div>
             <h1>Feature:
-                <small>MediaWiki - Health Check</small>
+                <small>MediaWiki - Validation</small>
             </h1>
             
                 <p>
                     <strong>Description: </strong>     As a user
-    I want to be able to edit a wiki page
+    I want to be able to validate the API endpoints
     So that I can confirm the API is working correctly </p>
                 
                <p><strong>File name:</strong>
-                    media-wiki-edit-page.feature
+                    media-wiki-validation.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    media-wiki-edit-page.feature</p>
+                    media-wiki-validation.feature</p>
             
         </div>
 
@@ -683,7 +681,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">1</div>
+                <div class="total">2</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -694,7 +692,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -703,7 +701,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     
                     
                     </tr>
@@ -715,7 +713,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:01.044</td></tr>
+                <tr><td>00:00:02.255</td></tr>
             </tr>
         
     </table>
@@ -836,17 +834,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
                                 <span class="tag">@regression</span>
-                            
-                                <span class="tag">@smoke</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Verify that the user can edit a page</small></h2>
+                <h2>Scenario: <small>Verify that the login API cannot be logged in with invalid data - <scenario></small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -860,10 +856,14 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
+                        <li>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
                         </li>
                     
 
@@ -872,7 +872,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:01.044</span>
+                            <span style=padding-right:5em>00:00:01.152</span>
                         </li>
                     
                 </ul>
@@ -904,7 +904,7 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                     
                                         
-                                            <span class="duration">00:00:00.270</span>
+                                            <span class="duration">00:00:00.228</span>
                                         
                                     
 
@@ -962,13 +962,209 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user login as a test user with username 'MEDIA_WIKI_USERNAME' and password 'MEDIA_WIKI_PASSWORD'
+                                        the user login as a test user with username '' and password 'MEDIA_WIKI_PASSWORD'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.606</span>
+                                            <span class="duration">00:00:00.680</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I get failed login response 'Incorrect username or password entered. Please try again.'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.244</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+                                        <a href="#error0-2-error" data-toggle="collapse">+ Show Error</a>
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+                                <div id="error0-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'
+    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)</pre>
+                                </div>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@regression</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Verify that the login API cannot be logged in with invalid data - <scenario></small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:01.103</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.255</span>
                                         
                                     
 
@@ -1023,16 +1219,16 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">When </span>
 
                                     
-                                        the user edits a wiki page 'test edit'
+                                        the user login as a test user with username 'Invalid' and password 'MEDIA_WIKI_PASSWORD'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.168</span>
+                                            <span class="duration">00:00:00.848</span>
                                         
                                     
 
@@ -1056,6 +1252,77 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I get failed login response 'Incorrect username or password entered. Please try again.'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">0s</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+                                        <a href="#error1-2-error" data-toggle="collapse">+ Show Error</a>
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+                                <div id="error1-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'
+    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)</pre>
+                                </div>
                             
 
                             
@@ -1125,8 +1392,8 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            1,
                             0,
+                            2,
                             0,
                             0,
                             0,

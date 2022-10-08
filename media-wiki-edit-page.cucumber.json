@@ -42,7 +42,7 @@
             "name": "the user login as a test user with username 'MEDIA_WIKI_USERNAME' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 851000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "the user edits a wiki page 'test edit'",
             "result": {
               "status": "passed",
-              "duration": 240000000
+              "duration": 169000000
             }
           }
         ]

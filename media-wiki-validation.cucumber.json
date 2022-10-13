@@ -28,7 +28,7 @@
             "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
             "result": {
               "status": "passed",
-              "duration": 226000000
+              "duration": 274000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "the user login as a test user with username '' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 342000000
             }
           },
           {
@@ -48,8 +48,8 @@
             "name": "I get failed login response 'Incorrect username or password entered. Please try again.'",
             "result": {
               "status": "failed",
-              "duration": 194000000,
-              "error_message": "AssertionError: expected undefined to equal 'Incorrect username or password entered. Please try again.'\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)"
+              "duration": 284000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'Unable to continue login. Your session most likely timed out.'\n    +'Incorrect username or password entered. Please try again.'\n\n    at Context.eval (https://en.wikipedia.org/__cypress/tests?p=cypress/integration/media-wiki/media-wiki-validation.feature:99:12)"
             }
           }
         ]
@@ -74,7 +74,7 @@
             "name": "I send GET request to 'action=query&type=login&format=json&meta=tokens' generates a token",
             "result": {
               "status": "passed",
-              "duration": 270000000
+              "duration": 253000000
             }
           },
           {
@@ -84,7 +84,7 @@
             "name": "the user login as a test user with username 'Invalid' and password 'MEDIA_WIKI_PASSWORD'",
             "result": {
               "status": "passed",
-              "duration": 641000000
+              "duration": 638000000
             }
           },
           {
